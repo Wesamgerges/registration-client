@@ -12,4 +12,5 @@ module.exports =   [
     'bootstrap-vue/dist/bootstrap-vue.css',
     '~/assets/bootstrap-social.css',
     '~/assets/styles.css',
+    'vue-form-wizard/dist/vue-form-wizard.min.css'
 ]
