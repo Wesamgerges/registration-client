@@ -1,6 +1,6 @@
-# auth-service-client
+# Registration-client
 
-> Auth Service Client
+> Registration Client
 
 ## Build Setup
 
