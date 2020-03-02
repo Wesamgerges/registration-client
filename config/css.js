@@ -12,5 +12,7 @@ module.exports =   [
     'bootstrap-vue/dist/bootstrap-vue.css',
     '~/assets/bootstrap-social.css',
     '~/assets/styles.css',
-    'vue-form-wizard/dist/vue-form-wizard.min.css'
+    'vue-form-wizard/dist/vue-form-wizard.min.css',
+    'vue-form-generator/dist/vfg.css',
+    '~/assets/themify-icons.css'
 ]

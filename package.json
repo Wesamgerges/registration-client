@@ -22,9 +22,12 @@
     "bootstrap-vue": "^2.0.0",
     "nuxt": "^2.9.0",
     "nuxt-fontawesome": "^0.4.0",
+    "themify-icons": "^1.0.0",
+    "vue-form-generator": "^2.3.4",
     "vue-form-wizard": "^0.8.4",
     "vue-paypal-checkout": "^3.2.0",
-    "vuejs-datepicker": "^1.6.2"
+    "vuejs-datepicker": "^1.6.2",
+    "vuelidate": "^0.7.5"
   },
   "devDependencies": {}
 }

@@ -11,17 +11,6 @@
    <div v-else> 
         <loading ></loading>
     </div>
-    <form-wizard>
-<tab-content title="tab1">
-First tab
-</tab-content>
-<tab-content title="tab2">
-Second tab
-</tab-content>
-<tab-content title="tab3">
-Last tab
-</tab-content>
-</form-wizard>
 </div>
 </template>
 
@@ -29,8 +18,6 @@ Last tab
 import Authenticator from '~/services/Authenticator.js'
 import login from '~/components/auth/Login.vue'
 import loading from '~/components/Loading.vue'
-
-import VueFormWizard from 'vue-form-wizard'
 
 import { mapMutations, mapGetters, mapState } from 'vuex'
 export default {

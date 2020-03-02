@@ -16,7 +16,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 module.exports = {
-    middleware: ['auth'],
+   // middleware: ['auth'],
     extendRoutes(routes, resolve) {
       routes.push({
         name: 'login',
@@ -26,6 +26,10 @@ module.exports = {
         path: '/register',
         redirect: { name: 'login', query: { register: '1' } },      
         component: resolve(__dirname, '../pages/auth/login.vue')
+      },{
+        path: '/father',
+        name: 'father',      
+        component: resolve(__dirname, '../components/parent/Father.vue')
       })
     },
     ...routerBase

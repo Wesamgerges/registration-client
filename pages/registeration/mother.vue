@@ -3,9 +3,11 @@
 </template>
 
 <script>
-import EditParent from './Edit';
+import EditParent from '~/components/parent/Edit'
 
 export default {
+    auth: false,
+    layout: 'plain',
     components: {
         EditParent,
     },

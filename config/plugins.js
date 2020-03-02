@@ -10,5 +10,5 @@
 */
 module.exports =  [   
     '~/plugins/axios',
-    '~/plugins/vue-form-wizard'
+    // '~/plugins/vue-form-wizard'
 ]
