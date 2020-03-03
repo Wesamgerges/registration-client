@@ -111,6 +111,7 @@ export default {
                     model: "agree",
                     default: true,                   
                     required: true,
+                    align: 'right',
                     // validator: (v)=>{  
                     //     if (v) {
                     //         return []

@@ -23,7 +23,7 @@
     "nuxt": "^2.9.0",
     "nuxt-fontawesome": "^0.4.0",
     "themify-icons": "^1.0.0",
-    "vue-form-generator": "^2.3.4",
+    "vue-form-generator": "github:Wesamgerges/vue-form-generator",
     "vue-form-wizard": "^0.8.4",
     "vue-paypal-checkout": "^3.2.0",
     "vuejs-datepicker": "^1.6.2",
