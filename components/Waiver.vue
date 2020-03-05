@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center m-5">
+    <div class="text-center">
         <div class="h2"> Summer Camp 2019 <br/>Waiver </div>
         I hereby give permission to my child/children to participate in the summer camp and the trips organized by St. Mary & St. Mercurius Coptic Orthodox Church of Belleville, New Jersey [the Church].
         <br/><br/>
@@ -12,28 +12,7 @@
 </template>
 
 <script>
-
 export default {
     name : 'Waiver',
-     props : {
-        authUser : {},
-    },
-
-    data() {
-        return {
-        }
-    },
-    watch: {
-        agree(val) {
-            // this.$parent.$parent.family.waiver = val ? new Date() : null;           
-            // this.$emit('can-continue', { value: val } ); 
-        }
-    },    
-    methods: {
-        //    validateStep(name) {   
-        //     var refToValidate = this.$refs[name][0];
-        //     return refToValidate.validate();
-        // },
-    }
 }
 </script>

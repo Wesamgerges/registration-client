@@ -19,19 +19,14 @@
             </tab-content>
             <tab-content title="Waiver"
                          icon="ti-check"
-                          :before-change="waiverfn">
-                <waiver></waiver>
-              
-                    <vue-form-generator 
-                    :model="model" 
-                    :schema="schema[2]"
-                    :options="formOptions"
-                    ref="waiver"
-                   
-                >
-                
-                </vue-form-generator>
-                
+                          :before-change="setAgreementTimestamp">
+                <waiver></waiver>              
+                <vue-form-generator 
+                :model="model" 
+                :schema="schema[2]"
+                :options="formOptions"
+                ref="waiver">                
+                </vue-form-generator>                
             </tab-content>
 
             <tab-content title="Last step"
@@ -77,8 +72,7 @@ export default {
                 icon: "ti-user",
                 model: "model",
                 options: "formOptions",
-                ref: "mother"
-           
+                ref: "mother"           
             }
             ],
             model: {
@@ -101,33 +95,27 @@ export default {
                 validationErrorClass:   "has-error",
                 validationSuccessClass: "has-success",
                 validateAfterChanged:   true
-            }, 
-            
-            
-            schema : [father, mother, {
-                fields : [{
-                    type: "checkbox",
-                    label: "I Agree",
-                    model: "agree",
-                    default: true,                   
-                    required: true,
-                    align: 'right',
-                    // validator: (v)=>{  
-                    //     if (v) {
-                    //         return []
-                    //     } else {
-                    //         return ['Enter your primary phone number']
-                    //     } 
-                    // },
-                    styleClasses: 'agree col-sm-12',
-                    options: "formOptions",
-                }]}
+            },                         
+            schema : [
+                father, 
+                mother, 
+                {
+                    fields : [{
+                        type: "checkbox",
+                        label: "I Agree",
+                        model: "agree",
+                        default: true,                   
+                        required: true,
+                        align: 'right',
+                        styleClasses: 'agree col-sm-12 text-center',
+                        options: "formOptions",
+                    }]
+                }
             ]
-        }
-    
+        }    
     },
     methods: {
-        waiverfn() {
+        setAgreementTimestamp() {
             if(this.model.agree) {
                 this.model.waiver = new Date() 
             }
@@ -146,9 +134,8 @@ export default {
 
 <style>
 .agree {
-    margin-left: 45%;
-    zoom: 200%;
-
+    /* margin-left: 45%; */
+    align-content: center;
+    zoom: 180%;
 }
-
 </style>
